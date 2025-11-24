@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from app.api.v1.endpoints import auth, inventory
 from app.core.database import engine
 from app.models.base import Base
+from app.models.sale import Sale
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
